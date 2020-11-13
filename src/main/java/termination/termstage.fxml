@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="101.0" prefWidth="333.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="termination.ExitController">
+    <children>
+        <Button fx:id="delete" layoutX="230.0" layoutY="61.0" mnemonicParsing="false" onAction="#destroyLoadedFile" style="-fx-background-color: sienna;" text="Don't save" textFill="WHITE" />
+        <Button fx:id="saveInMemory" layoutX="167.0" layoutY="61.0" mnemonicParsing="false" onAction="#saveInFile" style="-fx-background-color: sienna;" text="Save" textFill="WHITE" />
+        <Label fx:id="message" layoutX="16.0" layoutY="14.0" prefHeight="37.0" prefWidth="302.0" />
+    </children>
+</AnchorPane>

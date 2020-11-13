@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="575.0" prefWidth="918.0" style="-fx-background-color: Beige;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainstage.Controller">
+    <children>
+        <TextArea fx:id="operationsArea" layoutX="255.0" layoutY="296.0" prefHeight="274.0" prefWidth="659.0" />
+        <TextField fx:id="fileField" layoutX="93.0" layoutY="16.0" prefHeight="26.0" prefWidth="139.0" />
+        <Label fx:id="lines" layoutX="2.0" layoutY="108.0" text="Switch Lines at" />
+        <TextField fx:id="unit1" layoutX="102.0" layoutY="104.0" prefHeight="26.0" prefWidth="39.0" />
+        <TextField fx:id="unit2" layoutX="163.0" layoutY="104.0" prefHeight="26.0" prefWidth="39.0" />
+        <Label fx:id="wordsLabel" layoutX="5.0" layoutY="185.0" text="Switch Words" />
+        <TextField fx:id="wUnit1" layoutX="102.0" layoutY="181.0" prefHeight="26.0" prefWidth="39.0" />
+        <TextField fx:id="wUnit2" layoutX="163.0" layoutY="181.0" prefHeight="26.0" prefWidth="39.0" />
+        <TextArea fx:id="romContentsArea" layoutX="255.0" layoutY="32.0" prefHeight="244.0" prefWidth="659.0" style="-fx-background-color: white;" />
+        <Button fx:id="loader" layoutX="4.0" layoutY="13.0" mnemonicParsing="false" onAction="#fileHandler" style="-fx-background-color: sienna;" text="Load File" textFill="WHITE" />
+        <Label fx:id="secLabel" layoutX="9.0" layoutY="216.0" prefHeight="18.0" prefWidth="75.0" text="At Lines" />
+        <TextField fx:id="lUnit1" layoutX="102.0" layoutY="212.0" prefHeight="26.0" prefWidth="39.0" />
+        <TextField fx:id="lUnit2" layoutX="163.0" layoutY="212.0" prefHeight="26.0" prefWidth="39.0" />
+        <Label alignment="CENTER" layoutX="261.0" layoutY="12.0" prefHeight="18.0" prefWidth="648.0" style="-fx-background-color: maroon;" text="Contents saved in ROM" textFill="WHITE" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="261.0" layoutY="277.0" prefHeight="18.0" prefWidth="648.0" style="-fx-background-color: maroon;" text="Contents loaded in RAM | Operation messages" textAlignment="CENTER" textFill="WHITE" />
+        <Button fx:id="helpBt" layoutX="4.0" layoutY="288.0" mnemonicParsing="false" onAction="#helpHandler" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: sienna;" text="Help" textFill="WHITE" />
+        <Button fx:id="writeButton" layoutX="4.0" layoutY="138.0" mnemonicParsing="false" onAction="#switchLines" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: sienna;" text="Compute switched lines" textFill="WHITE" />
+        <Button fx:id="computeWords" layoutX="4.0" layoutY="245.0" mnemonicParsing="false" onAction="#switchWords" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: sienna;" text="Compute switched words" textFill="WHITE" />
+        <Button fx:id="save" layoutX="8.0" layoutY="61.0" mnemonicParsing="false" onAction="#record" prefHeight="32.0" prefWidth="227.0" style="-fx-background-color: sienna;" text="Save" textFill="WHITE" />
+    </children>
+</AnchorPane>
