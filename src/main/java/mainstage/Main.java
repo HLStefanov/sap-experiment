@@ -33,15 +33,15 @@ public class Main extends Application {
         launch(args);
     }
 
-    /**                    This method adds an EventHandler to the X button
-     *                     of the L-Switch main window, which contains a call to
-     *                     the runLater() method of the java platform, which in
-     *                     our case is used to display the closing window of our
-     *                     application. The aforementioned window, implemented
-     *                     in the termination package will only appear if a file's
-     *                     contents are copied in memory,have been modified,
-     *                     and are thus different to the contents of the
-     *                     file located in ROM.
+    /**           This method adds an EventHandler to the X button
+     *            of the L-Switch main window, which contains a call to
+     *            the runLater() method of the java platform, which in
+     *            our case is used to display the closing window of our
+     *            application. The aforementioned window, implemented
+     *            in the termination package will only appear if a file's
+     *            contents are copied in memory,have been modified,
+     *            and are thus different to the contents of the
+     *            file located in ROM.
      * @param primaryStage is the primary stage of the L-Switch app
      */
     public void setActionOnXButton(Stage primaryStage){
