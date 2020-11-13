@@ -121,6 +121,7 @@ public class Controller {
     public void fileHandler(){
 
         romContentsArea.clear();
+        operationsArea.clear();
         Stage st = new Stage();
         Stream<String> input = Stream.empty();
         FileChooser.ExtensionFilter filter =  new FileChooser.ExtensionFilter("Txt files",  "*.txt");
@@ -198,7 +199,7 @@ public class Controller {
         BufferedWriter writer;
         FileWriter fileWriter;
 
-        if(file != null){
+        if(file != null && checkReadContents()){
 
             try {
                 fileWriter = new FileWriter(file);
@@ -213,6 +214,8 @@ public class Controller {
                 operationsArea.setText(e.getMessage());
             }
 
+        }else{
+            operationsArea.setText("NO RECORDS IN RANDOM ACCESS MEMORY");
         }
 
     }
