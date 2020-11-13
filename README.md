@@ -1,7 +1,7 @@
 # sap-experiment
 Line switching app made for SAP project
 A file processing application made with JavaFX, created for a SAP project, given to students at FCST of TU-Sofia.
-Name - L-Switch - this is the name I use throughout the packages of this project, to refer to the project itself.
+Name - L-Switch - this is the name I use throughout the packages of this project to refer to the project itself.
 
 ## Requirements
 Java 14,
