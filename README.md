@@ -3,8 +3,8 @@ Line switching app made for SAP project
 A file processing application made with JavaFX, created for a SAP project, given to students at FCST of TU-Sofia.
 
 ## Requirements
--Java 14
--gradle build tool
+Java 14,
+ gradle build tool
 
 ## Importnant notes
 - This app was built with OpenJDK 14;
