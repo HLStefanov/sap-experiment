@@ -10,6 +10,6 @@ Java 14,
 - This app was built with OpenJDK 14;
 - The source files are in the `src/main/java` directory
 - The default runnable class is specified in build.gradle
-- Use git clone https://github.com/Hrs-69/sap-experiment.git to clone the project
+- Use ```` git clone https://github.com/Hrs-69/sap-experiment.git to clone the project ````
 
 *Hristo Stefanov, student at FCST, TU-Sofia*
