@@ -11,7 +11,7 @@ Java 14,
 ## Importnant notes
 - This app was built with OpenJDK 14;
 - The source files are in the `src/main/java` directory
-- Beware: This project was build using Intellij IDEA, and thus is most likely to run without issue in it.
+- Beware: This project was built using Intellij IDEA, and thus is most likely to run without issue in it.
 - The default runnable class is specified in build.gradle
 - Use ```` git clone https://github.com/Hrs-69/sap-experiment.git ```` to clone the project
 
