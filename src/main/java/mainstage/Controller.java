@@ -76,7 +76,7 @@ public class Controller {
     @FXML
     private TextArea romContentsArea;
 
-    /** Our list variable. All lines, that are to be modified,
+    /** Our list object. All lines, that are to be modified,
      *  are stored in it.
      */
     private static List<String> list = new ArrayList<>();
@@ -85,7 +85,7 @@ public class Controller {
 
     /** Implicitly overridden initialize method()
      *  from the javaFX framework. It defines the
-     *  settings of our variable at the start of the
+     *  settings of our objects at the start of the
      *  L-Switch app
      */
     @FXML
@@ -112,8 +112,8 @@ public class Controller {
     }
 
     /**  fileHandler() is used to load the contents of a text file
-     *   from the ROM memory. Once collected, the contents of the file
-     *   are written to the list variable.
+     *   from the ROM. Once collected, the contents of the file
+     *   are written to the list object.
      *   fileHandler() is explicitly mapped to the loader Button object
      *   in primary.fxml
      */
@@ -171,7 +171,7 @@ public class Controller {
      *   and calls the printContent() method to display them
      *   in the romContentsArea(labeled "Contents saved in ROM"),
      *   which shows the contents of the file,
-     *   as they exist in the ROM memory.
+     *   as they exist in the ROM.
      */
     @FXML
     public void record() {
@@ -332,9 +332,9 @@ public class Controller {
     /**            printContent() is used internally
      *             to show the modified lines in a TextArea
      *
-     * @param area here used as a placeholder for one two TextArea objects,
-     *             one which shows the file contents, as they existed written in
-     *             memory, and one, which shows the file contents, as modified
+     * @param area here used as a placeholder for one of two TextArea objects,
+     *             one which shows the file contents, as they exist written in
+     *             ROM, and one, which shows the file contents, as modified
      *             by the L-Switch user.
      *
      * @param list represents the list of lines, used in the L-Switch app
@@ -363,8 +363,8 @@ public class Controller {
     /**        checkReadContents checks the modified copy
      *         of the contents of the file, loaded in L-Switch,
      *
-     * @return if a difference exists between the file contents in ROM memory,
-     *          and the ones processed in the RAM memory, return true. Otherwise,
+     * @return if a difference exists between the file contents in ROM,
+     *          and the ones processed in the RAM, return true. Otherwise,
      *          a false value will be returned.
      */
     public boolean checkReadContents(){
